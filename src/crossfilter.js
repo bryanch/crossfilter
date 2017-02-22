@@ -28,7 +28,7 @@ function crossfilter() {
     // Lengthen the filter bitset to handle the new records.
     // Notify listeners (dimensions and groups) that new data is available.
     if (n1) {
-      data = data.concat(newData);
+      //data = data.concat(newData);
       filters = crossfilter_arrayLengthen(filters, n += n1);
       dataListeners.forEach(function(l) { l(newData, n0, n1); });
     }
